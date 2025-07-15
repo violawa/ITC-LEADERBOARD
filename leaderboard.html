@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ITC Leaderboard</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "League Spartan", sans-serif;
+        background-color: #011428;
+        padding: 40px;
+        color: #ffffff;
+      }
+
+      h1,
+      h2 {
+        text-align: center;
+        color: #ffffff;
+        margin-bottom: 10px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 30px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+      }
+
+      th,
+      td {
+        padding: 16px;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+        color: #001f3f;
+      }
+
+      th {
+        background-color: #042b53;
+        color: white;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f7f9fc;
+      }
+
+      tr:hover {
+        background-color: #e6f0ff;
+        transition: background-color 0.3s ease;
+      }
+
+      .highlight {
+        background-color: #1affdd !important;
+        color: #333 !important;
+        font-weight: bold;
+      }
+
+      @media (max-width: 768px) {
+        table,
+        thead,
+        tbody,
+        th,
+        td,
+        tr {
+          display: block;
+        }
+
+        tr {
+          margin-bottom: 15px;
+        }
+
+        th,
+        td {
+          text-align: right;
+          padding-left: 50%;
+          position: relative;
+        }
+
+        th::before,
+        td::before {
+          position: absolute;
+          left: 15px;
+          width: 45%;
+          white-space: nowrap;
+          text-align: left;
+          font-weight: bold;
+          color: #666;
+        }
+
+        th:nth-of-type(1)::before {
+          content: "Peringkat";
+        }
+        th:nth-of-type(2)::before {
+          content: "Tim";
+        }
+        th:nth-of-type(3)::before {
+          content: "Total Akhir";
+        }
+        th:nth-of-type(4)::before {
+          content: "Selisih (%)";
+        }
+        td:nth-of-type(1)::before {
+          content: "Peringkat";
+        }
+        td:nth-of-type(2)::before {
+          content: "Tim";
+        }
+        td:nth-of-type(3)::before {
+          content: "Total Akhir";
+        }
+        td:nth-of-type(4)::before {
+          content: "Selisih (%)";
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>INTERNAL TRADING COMPETITION (ITC)</h1>
+    <h2>Final Leaderboard</h2>
+
+    <table>
+      <tr>
+        <th>Peringkat</th>
+        <th>Tim</th>
+        <th>Total Akhir</th>
+        <th>Selisih (%)</th>
+      </tr>
+      <tr class="highlight">
+        <td>1 (Juara 1)</td>
+        <td>Tim 9</td>
+        <td>Rp5.298.000</td>
+        <td>+5,96%</td>
+      </tr>
+      <tr class="highlight">
+        <td>2 (Juara 2)</td>
+        <td>Tim 11</td>
+        <td>Rp5.214.000</td>
+        <td>+4,28%</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Tim 18</td>
+        <td>Rp5.183.900</td>
+        <td>+3,68%</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Tim 4</td>
+        <td>Rp5.162.000</td>
+        <td>+3,24%</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Tim 13</td>
+        <td>Rp5.114.200</td>
+        <td>+2,28%</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>Tim 19</td>
+        <td>Rp5.100.000</td>
+        <td>+2,00%</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>Tim 5</td>
+        <td>Rp5.079.000</td>
+        <td>+1,58%</td>
+      </tr>
+      <tr>
+        <td>8</td>
+        <td>Tim 6</td>
+        <td>Rp5.070.500</td>
+        <td>+1,41%</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>Tim 20</td>
+        <td>Rp5.061.500</td>
+        <td>+1,23%</td>
+      </tr>
+      <tr>
+        <td>10</td>
+        <td>Tim 7</td>
+        <td>Rp5.031.700</td>
+        <td>+0,63%</td>
+      </tr>
+      <tr>
+        <td>11</td>
+        <td>Tim 2</td>
+        <td>Rp5.027.000</td>
+        <td>+0,54%</td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td>Tim 16</td>
+        <td>Rp5.009.000</td>
+        <td>+0,18%</td>
+      </tr>
+      <tr>
+        <td>13</td>
+        <td>Tim 3</td>
+        <td>Rp5.004.000</td>
+        <td>+0,08%</td>
+      </tr>
+      <tr>
+        <td>14</td>
+        <td>Tim 17</td>
+        <td>Rp4.993.300</td>
+        <td>-0,13%</td>
+      </tr>
+      <tr>
+        <td>15</td>
+        <td>Tim 1</td>
+        <td>Rp4.963.900</td>
+        <td>-0,72%</td>
+      </tr>
+      <tr>
+        <td>16</td>
+        <td>Tim 15</td>
+        <td>Rp4.953.000</td>
+        <td>-0,94%</td>
+      </tr>
+      <tr>
+        <td>17</td>
+        <td>Tim 10</td>
+        <td>Rp4.865.700</td>
+        <td>-2,69%</td>
+      </tr>
+      <tr>
+        <td>18</td>
+        <td>Tim 8</td>
+        <td>Rp4.811.200</td>
+        <td>-3,78%</td>
+      </tr>
+      <tr>
+        <td>19</td>
+        <td>Tim 14</td>
+        <td>Rp4.742.000</td>
+        <td>-5,16%</td>
+      </tr>
+      <tr>
+        <td>20</td>
+        <td>Tim 12</td>
+        <td>Rp4.210.700</td>
+        <td>-15,79%</td>
+      </tr>
+    </table>
+    <footer>
+      <p style="font-family: League Spartan">
+        © 2025 Investment Vibez. All Rights Reserved.
+      </p>
+    </footer>
+  </body>
+</html>
